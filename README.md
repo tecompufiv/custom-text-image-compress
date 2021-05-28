@@ -137,3 +137,5 @@ A basic level explanation diagram was included.
 I would love to see the programm running in a more powered machine
 
 I think the optional part is not hard to get done is problably taking the converted HW vectors and compare element by element. i still don't entirely understand this part
+
+Made by freelancer -josucano on fiverr.
