@@ -10,16 +10,16 @@ $ - `App.py` | If you have python installed and added to the native System PATH
 
 $ - `../py App.py` | If you need to call the python binarie compiler in order to execute the programm
 
-**NOTE:** The programm can show a partial work done by modifying the variable `haveToWork` in the `App.py` file, at the top of the code
+**NOTE:** The programm can show a partial work done by modifying the variable `haveToWork` in the `App.py` file, at the top of the code.
 
 ## Problem
 
 Linked list which contain segments of the text picture
-- Segment's starting x and y coords
-- Segment height and width
-- 64x64 binary picture of the character (initially empty)
-- 64 int array (result of the Hadamard transform)
-- Final character code
+- Segment's starting x and y coords.
+- Segment height and width.
+- 64x64 binary picture of the character (initially empty).
+- 64 int array (result of the Hadamard transform).
+- Final character code.
 
 ## Rules
 
@@ -74,20 +74,18 @@ The solution must behave like:
 
 - Is not using object oriented programming, even knowing this is not hard to change **I DON'T recommend using OOP**, because this paradigm reduces proccessing speed. Changing this is up to you.
 
-- The programm is **not capable to proccess phone pictures**, specially when peper sound is in the image. I tested som clean phone images and seems to work but is not entirely accurate. This might require a more complex solution like a gauss transform
+- The programm is **not capable to proccess phone pictures**, specially when peper sound is in the image. I tested som clean phone images and seems to work but is not entirely accurate. This might require a more complex solution like a gauss transform.
 
 
 ## Annotations
 
 - Overall the program is working great, *docstring was used.*
 
-- The `App.py` code includes some statements used to show the proff of work, you can get rid off this lines with no problem
+- The `App.py` code includes some statements used to show the proff of work, you can get rid off this lines with no problem.
 
-- I recommend an IDE with intellisense such as vscode to check the code, this is so you can
-see the documentation with the pop ups and save time navigating through the code.
+- I recommend an IDE with intellisense such as vscode to check the code, this is so you can see the documentation with the pop ups and save time navigating through the code.
 
-- Due to the paradigm used, the docstring includes wich functions are being used. E.g. inside
-`foo()`, `foo1()` and `foo2()` are being used, this is specified in the docstring of `foo()` for a better comprehension.
+- Due to the paradigm used, the docstring includes wich functions are being used. E.g. inside `foo()`, `foo1()` and `foo2()` are being used, this is specified in the docstring of `foo()` for a better comprehension.
 
 - The HW transform is done with binary matrix of single value cell, not pixels.
 
@@ -97,39 +95,38 @@ I'm going to try on explain how the code flow works.
 
 ##### Getting the row segments
 
-1. sequential horizontal search until a black pixel is found
-2. starting from the pixel founded searchs horizontally until it finds a blank pixel row. This blank row is the bottom part of the row
+1. sequential horizontal search until a black pixel is found.
+2. starting from the pixel founded searchs horizontally until it finds a blank pixel row. This blank row is the bottom part of the row.
 3. while the step 2 is happening the program finds the left smalles pixel and the right greater pixel.
-4. When step 2 is done, the bounds are saved and the algorithm looks for the next starting pixel row until it reach the end 
-of the image
+4. When step 2 is done, the bounds are saved and the algorithm looks for the next starting pixel row until it reach the end of the image.
 5. segment the original image acording to the segments obtained.
 6. time is saved by stopping the search at the momment a black pixel apears, this redices time searching.
 
 
 ##### Getting the char segmentes
 
-1. Sequential vertical search until a black pixel is found
-2. Starting from the pixel founded searchs vertical until it finds a blank pixel column. This blank column is the right part of the char
+1. Sequential vertical search until a black pixel is found.
+2. Starting from the pixel founded searchs vertical until it finds a blank pixel column. This blank column is the right part of the char.
 3. While the step 2 is happening the program finds the top smalles pixel and the bottom greater pixel.
 4. When step 2 is done, the bounds are saved and the algorithm looks for the next starting pixel column until it reach the end 
-of the image
+of the image.
 5. Segment the original image acording to the segments obtained.
-6. Time is saved by stopping the search at the momment a black pixel apears, this redices time searching
+6. Time is saved by stopping the search at the momment a black pixel apears, this reduces time searching.
 
 
 ##### HW function
 
-1. Creates the binary matrixes with 0 and 1 acording to the binary images
-2. Creates the HW matrix
-3. Being H = HW matrix & M the binary matrix & a option scalar sometimes used as S = 1 / len(H)
-4. for each m in M's: M = H * M * H [* scalar]
-5. for each m in M's: sumColumns(M)
+1. Creates the binary matrixes with 0 and 1 acording to the binary images.
+2. Creates the HW matrix.
+3. Being H = HW matrix & M the binary matrix & a option scalar sometimes used as S = 1 / len(H).
+4. for each m in M's: M = H * M * H [* scalar].
+5. for each m in M's: sumColumns(M).
 
 
 ## Additional information
 
 The code is as specified, it can be improve but this means using non custom functions.
 
-I would love to see the program running in a more powered machine
+I would love to see the program running in a more powered machine.
 
 Made by freelancer -josucano on fiverr.
