@@ -1,6 +1,6 @@
 # Python: Custom text image compression
 
-Python: This is an exercise on how to compress text images using custom code to process the image.
+Python: This is an exercise on how to compress text images using custom code to process the image and compress it using the walsh hadamard function.
 
 ##### RUN
 
@@ -10,7 +10,7 @@ $ - `App.py` | If you have python installed and added to the native System PATH
 
 $ - `../py App.py` | If you need to call the python binarie compiler in order to execute the programm
 
-**NOTE:** The programm can show a partial work done by modifying the variable haveToWork in the `App.py` file, at the top of the code
+**NOTE:** The programm can show a partial work done by modifying the variable `haveToWork` in the `App.py` file, at the top of the code
 
 ## Problem
 
@@ -52,9 +52,9 @@ The solution must behave like:
 
 - The program is *using full docstring* showing params, returns, and function being usen inside a function.
 
-- The programm *succesfully gets chars without blank spaces* or fixel sizes,this is done by a custom code.
+- The program *succesfully gets chars without blank spaces* or fixel sizes,this is done by a custom code.
 
-- The programm *succesfully applies the HW transform to the 64x64 matrixes*, the Hadamard Walsh matrix is being generated inside the code as custom.
+- The program *succesfully applies the HW transform to the 64x64 matrixes*, the Hadamard Walsh matrix is being generated inside the code as custom.
 
 - All images convertions and modifications are *made custom pixel by pixel*.
 
@@ -79,7 +79,7 @@ The solution must behave like:
 
 ## Annotations
 
-- Overall the programm is working great, *docstring was used.*
+- Overall the program is working great, *docstring was used.*
 
 - The `App.py` code includes some statements used to show the proff of work, you can get rid off this lines with no problem
 
@@ -108,13 +108,13 @@ of the image
 
 ##### Getting the char segmentes
 
-1. sequential vertical search until a black pixel is found
-2. starting from the pixel founded searchs vertical until it finds a blank pixel column. This blank column is the right part of the char
-3. while the step 2 is happening the program finds the top smalles pixel and the bottom greater pixel.
+1. Sequential vertical search until a black pixel is found
+2. Starting from the pixel founded searchs vertical until it finds a blank pixel column. This blank column is the right part of the char
+3. While the step 2 is happening the program finds the top smalles pixel and the bottom greater pixel.
 4. When step 2 is done, the bounds are saved and the algorithm looks for the next starting pixel column until it reach the end 
 of the image
-5. segment the original image acording to the segments obtained.
-6. time is saved by stopping the search at the momment a black pixel apears, this redices time searching
+5. Segment the original image acording to the segments obtained.
+6. Time is saved by stopping the search at the momment a black pixel apears, this redices time searching
 
 
 ##### HW function
@@ -130,12 +130,6 @@ of the image
 
 The code is as specified, it can be improve but this means using non custom functions.
 
-The goal of the task was accomplished
-
-A basic level explanation diagram was included.
-
-I would love to see the programm running in a more powered machine
-
-I think the optional part is not hard to get done is problably taking the converted HW vectors and compare element by element. i still don't entirely understand this part
+I would love to see the program running in a more powered machine
 
 Made by freelancer -josucano on fiverr.
