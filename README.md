@@ -72,7 +72,7 @@ The solution must behave like:
 
 - The program is not optimal, the processing of an image can take several minutes depending on the size. For this task a **8 million pixel images was tested and took around 2 minutes** of proccessing.
 
-- Is not using object oriented programming, even knowing this is not hard to change **I DON'T recommend using OOP**, because this paradigm reduces proccessing speed. Changing this is up to you.
+- Is not using object oriented programming, even knowing this is not hard to change **I DON'T recommend using OOP**, because this paradigm reduces proccessing speed.
 
 - The programm is **not capable to proccess phone pictures**, specially when peper sound is in the image. I tested som clean phone images and seems to work but is not entirely accurate. This might require a more complex solution like a gauss transform.
 
@@ -81,7 +81,7 @@ The solution must behave like:
 
 - Overall the program is working great, *docstring was used.*
 
-- The `App.py` code includes some statements used to show the proff of work, you can get rid off this lines with no problem.
+- The `App.py` code includes some statements used to show the proff of work.
 
 - I recommend an IDE with intellisense such as vscode to check the code, this is so you can see the documentation with the pop ups and save time navigating through the code.
 
