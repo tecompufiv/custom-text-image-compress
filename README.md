@@ -96,7 +96,7 @@ see the documentation with the pop ups and save time navigating through the code
 I'm going to try on explain how the code flow works.
 
 ##### Getting the row segments
-```
+
 1 - sequential horizontal search until a black pixel is found
 2 - starting from the pixel founded searchs horizontally until it finds a blank pixel row. This blank row is the bottom part of the row
 3 - while the step 2 is happening the program finds the left smalles pixel and the right greater pixel.
@@ -104,10 +104,10 @@ I'm going to try on explain how the code flow works.
 of the image
 5 - segment the original image acording to the segments obtained.
 6 - time is saved by stopping the search at the momment a black pixel apears, this redices time searching.
-```
+
 
 ##### Getting the char segmentes
-```
+
 1 - sequential vertical search until a black pixel is found
 2 - starting from the pixel founded searchs vertical until it finds a blank pixel column. This blank column is the right part of the char
 3 - while the step 2 is happening the program finds the top smalles pixel and the bottom greater pixel.
@@ -115,19 +115,19 @@ of the image
 of the image
 5 - segment the original image acording to the segments obtained.
 6 - time is saved by stopping the search at the momment a black pixel apears, this redices time searching
-```
+
 
 ##### HW function
-```
+
 1 - Creates the binary matrixes with 0 and 1 acording to the binary images
 2 - Creates the HW matrix
 3 - Being H = HW matrix & M the binary matrix & a option scalar sometimes used as S = 1 / len(H)
-4 - for each M in M's: M = H * M * H [* scalar]
-5 - for each M in M's: sumColumns(M)
-```
+4 - for each m in M's: M = H * M * H [* scalar]
+5 - for each m in M's: sumColumns(M)
+
 
 ## Additional information
-```
+
 The code is as specified, it can be improve but this means using non custom functions.
 
 The goal of the task was accomplished
@@ -137,4 +137,3 @@ A basic level explanation diagram was included.
 I would love to see the programm running in a more powered machine
 
 I think the optional part is not hard to get done is problably taking the converted HW vectors and compare element by element. i still don't entirely understand this part
-```
