@@ -16,7 +16,7 @@ Python: This is an exercise on how to compress text images using custom code to 
 8. [Conclusion](#conclusion)
 9. [Additional information](#additional-information)
 
-##### 1. Run
+## 1. Run
 
 The program is ready to run with
 
