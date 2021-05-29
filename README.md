@@ -10,9 +10,11 @@ Python: This is an exercise on how to compress text images using custom code to 
 5. [Challenges](#challenges)
 6. [Annotations](#annotations)
 7. [Code flow](#code-flow)
+
     7.1. [Getting row segments](#getting-the-row-segments)
     7.2. [Getting the char segmentes](#getting-the-char-segmentes)
     7.3. [Walsh Hadamard function](#walsh-hadamard-function)
+
 8. [Conclusion](#conclusion)
 9. [Additional information](#additional-information)
 
