@@ -2,7 +2,21 @@
 
 Python: This is an exercise on how to compress text images using custom code to process the image and compress it using the walsh hadamard function.
 
-##### RUN
+# Contents
+1. [Run](#run)
+2. [Problem](#problem)
+3. [Rules](#rules)
+4. [Solution](#solution) 
+5. [Challenges](#challenges)
+6. [Annotations](#annotations)
+7. [Code flow](#code-flow)
+    7.1. [Getting row segments](#getting-the-row-segments)
+    7.2. [Getting the char segmentes](#getting-the-char-segmentes)
+    7.3. [Walsh Hadamard function](#walsh-hadamard-function)
+8. [Conclusion](#conclusion)
+9. [Additional information](#additional-information)
+
+##### Run
 
 The program is ready to run with
 
@@ -45,22 +59,6 @@ The solution must behave like:
 ## Solution
 
 ![image info](./workflow.jpg)
-
-## Conclusion
-
-- The program resulted in a *modular program*, you can get an HW array of chars from an image by calling the main function and giving it the path to your image, *I recommend using complete paths NOT relative paths*.
-
-- The program is *using full docstring* showing params, returns, and function being usen inside a function.
-
-- The program *succesfully gets chars without blank spaces* or fixel sizes,this is done by a custom code.
-
-- The program *succesfully applies the HW transform to the 64x64 matrixes*, the Hadamard Walsh matrix is being generated inside the code as custom.
-
-- All images convertions and modifications are *made custom pixel by pixel*.
-
-- The program *needs only a single path* to and image and it will get the HW vectors.
-
-- Dependencies between functions are minimal and said functions are modular, *following modularity rules*.
 
 
 ## Challenges
@@ -114,7 +112,7 @@ of the image.
 6. Time is saved by stopping the search at the momment a black pixel apears, this reduces time searching.
 
 
-##### HW function
+##### Walsh Hadamard function
 
 1. Creates the binary matrixes with 0 and 1 acording to the binary images.
 2. Creates the HW matrix.
@@ -122,6 +120,21 @@ of the image.
 4. for each m in M's: M = H * M * H [* scalar].
 5. for each m in M's: sumColumns(M).
 
+## Conclusion
+
+- The program resulted in a *modular program*, you can get an HW array of chars from an image by calling the main function and giving it the path to your image, *I recommend using complete paths NOT relative paths*.
+
+- The program is *using full docstring* showing params, returns, and function being usen inside a function.
+
+- The program *succesfully gets chars without blank spaces* or fixel sizes,this is done by a custom code.
+
+- The program *succesfully applies the HW transform to the 64x64 matrixes*, the Hadamard Walsh matrix is being generated inside the code as custom.
+
+- All images convertions and modifications are *made custom pixel by pixel*.
+
+- The program *needs only a single path* to and image and it will get the HW vectors.
+
+- Dependencies between functions are minimal and said functions are modular, *following modularity rules*.
 
 ## Additional information
 
