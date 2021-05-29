@@ -16,7 +16,7 @@ Python: This is an exercise on how to compress text images using custom code to 
 8. [Conclusion](#conclusion)
 9. [Additional information](#additional-information)
 
-##### Run
+##### 1. Run
 
 The program is ready to run with
 
@@ -26,7 +26,7 @@ $ - `../py App.py` | If you need to call the python binarie compiler in order to
 
 **NOTE:** The programm can show a partial work done by modifying the variable `haveToWork` in the `App.py` file, at the top of the code.
 
-## Problem
+## 2. Problem
 
 Linked list which contain segments of the text picture
 - Segment's starting x and y coords.
@@ -35,7 +35,7 @@ Linked list which contain segments of the text picture
 - 64 int array (result of the Hadamard transform).
 - Final character code.
 
-## Rules
+## 3. Rules
 
 The solution must behave like:
 1. Open an image file (color) which contain text (using cv2).
@@ -56,12 +56,12 @@ The solution must behave like:
 
 9. The program should finally compare H-W transform value to a pre-built "database" of various characters with various fonts (the English ABC with maybe Ariel, Times New Roman, and something else) (Not done but it work on various fonts).
 
-## Solution
+## 4. Solution
 
 ![image info](./workflow.jpg)
 
 
-## Challenges
+## 5. Challenges
 
 
 - The program is **Slow**, this depends on the machine proccessing power BUT, overall is slow.
@@ -75,7 +75,7 @@ The solution must behave like:
 - The programm is **not capable to proccess phone pictures**, specially when peper sound is in the image. I tested som clean phone images and seems to work but is not entirely accurate. This might require a more complex solution like a gauss transform.
 
 
-## Annotations
+## 6. Annotations
 
 - Overall the program is working great, *docstring was used.*
 
@@ -87,7 +87,7 @@ The solution must behave like:
 
 - The HW transform is done with binary matrix of single value cell, not pixels.
 
-## Code flow
+## 7. Code flow
 
 I'm going to try on explain how the code flow works.
 
@@ -120,7 +120,7 @@ of the image.
 4. for each m in M's: M = H * M * H [* scalar].
 5. for each m in M's: sumColumns(M).
 
-## Conclusion
+## 8. Conclusion
 
 - The program resulted in a *modular program*, you can get an HW array of chars from an image by calling the main function and giving it the path to your image, *I recommend using complete paths NOT relative paths*.
 
@@ -136,7 +136,7 @@ of the image.
 
 - Dependencies between functions are minimal and said functions are modular, *following modularity rules*.
 
-## Additional information
+## 9. Additional information
 
 The code is as specified, it can be improve but this means using non custom functions.
 
